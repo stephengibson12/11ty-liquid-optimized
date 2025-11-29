@@ -1,0 +1,35 @@
+{% comment %}
+  Component: Hero Content
+  Contains the main heading and call-to-action button for the hero section.
+  Parameters:
+  - hero_title: (string, required) The main H1 title for the hero section.
+  - hero_cta_text: (string, optional) The text for the CTA button.
+  - include_cta_button: (boolean, optional) Set to `false` to hide the CTA button. Defaults to `true`.
+{% endcomment %}
+
+<div class="hero-copy">
+  <h1 class="hero-title mt-0 is-revealing">
+    <span style="display: block; padding-bottom: 30px;">{{ hero_title }}</span>
+  </h1>
+  {% if include_hero_tagline != false %}
+    <p class="hero-paragraph is-revealing">
+      {{ hero_tagline }}
+    </p>
+  {% endif %}
+
+  {% comment %} Conditionally render the CTA button {% endcomment %}
+  {% if include_cta_button != false %}
+    <div class="hero-form field field-grouped is-revealing">
+      <div class="control">
+        <a
+          class="button button-primary button-block"
+          id="signup"
+          target="_blank"
+          href="https://www.linkedin.com/in/stephenegibson/"
+        >
+          {{ hero_cta_text }}
+        </a>
+      </div>
+    </div>
+  {% endif %}
+</div>

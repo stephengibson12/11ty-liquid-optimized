@@ -1,0 +1,7 @@
+{
+  "name": "site name",
+  "title": "site title",
+  "description": "site description",
+  "ogImage": "https://example.com/static.jpg",
+  "ogType": "website"
+}

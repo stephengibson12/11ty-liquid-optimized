@@ -1,0 +1,46 @@
+---
+layout: base.liquid
+title: "page title"
+description: "page description"
+ogImage: "https://example.com/image.png"
+ogType: "website"    # or article
+---
+{% include 'components/hero-section.liquid',
+  include_tagline: true,
+  include_cta_button: true,
+  include_illustration: true,
+  hero_title: 'Sample Title',
+  hero_tagline: 'sample tagline',
+  hero_cta_text: 'cta button text'
+%}
+
+<section class="features section">
+  <div class="container">
+    <div class="features-inner section-inner">
+      <div class="features-wrap">
+        {% include 'components/feature.liquid',
+          feature_icon: 'feature-icon-1',
+          feature_title: 'some feature 1',
+          feature_description: 'some description'
+        %}
+
+        {% include 'components/feature.liquid',
+          feature_icon: 'feature-icon-2',
+          feature_title: 'some feature 2',
+          feature_description: 'some description 2'
+        %}
+
+        {% include 'components/feature.liquid',
+          feature_icon: 'feature-icon-3',
+          feature_title: 'some feature 3',
+          feature_description: 'some feature 3'
+        %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const API_URL = '{{ env.apiUrl }}';
+  console.log('your api url is', API_URL);
+</script>

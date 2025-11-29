@@ -1,0 +1,41 @@
+---
+layout: base.liquid
+title: "Title of Homepage"
+description: "Home Description."
+ogImage: "https://example.com/cover-image.jpg"
+ogType: "website"    # or article
+---
+{% include 'components/hero-section.liquid',
+  include_tagline: true,
+  include_cta_button: true,
+  include_illustration: true,
+  hero_title: 'hero image title',
+  hero_tagline: 'hero image tagline',
+  hero_cta_text: 'hero image cta'
+%}
+
+<section class="features section">
+  <div class="container">
+    <div class="features-inner section-inner">
+      <div class="features-wrap">
+        {% include 'components/feature.liquid',
+          feature_icon: 'feature-icon-1',
+          feature_title: 'Feature 1',
+          feature_description: 'Feature 1 description'
+        %}
+
+        {% include 'components/feature.liquid',
+          feature_icon: 'feature-icon-2',
+          feature_title: 'Feature 2',
+          feature_description: 'Feature 2 description'
+        %}
+
+        {% include 'components/feature.liquid',
+          feature_icon: 'feature-icon-3',
+          feature_title: 'Feature 3',
+          feature_description: 'Feature 3 description'
+        %}
+      </div>
+    </div>
+  </div>
+</section>

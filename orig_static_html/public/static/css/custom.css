@@ -1,0 +1,60 @@
+/* sg edits */
+h1 span.minute {
+	color: #43f1ff;
+	font-size: 30px;
+}
+
+h1 span.zero {
+	color: #4353ff;
+	font-size: 30px;
+	margin-left: 0.04em;
+}
+
+.brand.header-brand h1.m-0 a {
+	text-decoration: none; /* Remove underline by default */
+}
+
+.tos {
+	text-align: center;
+}
+
+.tos-main {
+	margin: 0 4em;
+}
+
+.alert {
+	display: none;
+	text-align: center;
+	padding: 10px;
+	margin-top: 20px;
+	background: #43f1ff;
+	color: #393f3f;
+	margin-bottom: 10px;
+}
+
+.footer-social-links {
+	margin-top: 20px;
+}
+
+.site-footer [href="mailto:stephen@minutezero.com"] {
+	color: #43f1ff;
+}
+
+.hero-paragraph .contact-email {
+	color: #43f1ff;
+}
+
+.social-icon {
+	width: 16px;
+	height: 16px;
+	fill: #ffffff;
+	stroke: #ffffff;
+	transition: all 0.15s ease-out;
+	transform-origin: bottom;
+}
+
+.social-icon:hover {
+	transform: scale(1.35);
+	fill: #43f1ff;
+	stroke: #43f1ff;
+}

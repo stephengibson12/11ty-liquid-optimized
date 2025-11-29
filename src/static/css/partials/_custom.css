@@ -1,0 +1,132 @@
+/* edits */
+.brand a:link,
+.brand a:visited,
+.brand a:hover,
+.brand a:active {
+  text-decoration: none;
+}
+
+h1 span.minute {
+  color: #43f1ff;
+  font-size: 30px;
+}
+
+h1 span.zero {
+  color: #4353ff;
+  font-size: 30px;
+  margin-left: 0.04em;
+}
+
+.brand.header-brand h1.m-0 a {
+  text-decoration: none; /* Remove underline by default */
+}
+
+.tos-main {
+  margin: 2em 4em;
+}
+
+.alert {
+  display: none;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  background: #43f1ff;
+  color: #393f3f;
+  margin-bottom: 10px;
+}
+
+.footer-social-links {
+  margin-top: 20px;
+}
+
+.site-footer a {
+  color: #43f1ff;
+}
+
+.icon-new-tab {
+  width: 0.9em; /* scales nicely with text size */
+  height: 0.9em;
+  stroke: currentColor; /* inherits text color */
+  vertical-align: middle;
+  position: relative;
+  top: -0.05em; /* <- fine-tune vertical alignment */
+}
+
+.hero-paragraph .contact-email {
+  color: #43f1ff;
+}
+
+.social-icon {
+  width: 16px;
+  height: 16px;
+  fill: #ffffff;
+  stroke: #ffffff;
+  transition: all 0.15s ease-out;
+  transform-origin: bottom;
+}
+
+.social-icon:hover {
+  transform: scale(1.35);
+  fill: #43f1ff;
+  stroke: #43f1ff;
+}
+
+/* --- Navigation Styles --- */
+.site-header-inner {
+  display: flex;
+  align-items: flex-end;
+}
+
+.header-nav .header-links {
+  margin-bottom: 0.42em;
+}
+
+.header-nav {
+  margin-right: auto;
+  margin-left: 2rem;
+}
+
+.header-nav .header-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.header-nav .header-links a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #768696;
+  text-decoration: none;
+  padding: 4px 0;
+  border-bottom: 2px solid transparent;
+  transition: all 0.15s ease;
+}
+
+.header-nav .header-links a:hover,
+.header-nav .header-links a:active,
+.header-nav .header-links li.active a {
+  color: #43f1ff;
+  border-bottom: 2px solid #43f1ff;
+}
+
+/* header paragraph text */
+.tagline {
+  /* color: #4353ff; */
+  font-style: italic;
+}
+
+.site-footer-inner > div {
+  width: 100%;
+  text-align: center;
+}
+
+@media (min-width: 641px) {
+  .site-footer-inner {
+    flex-direction: row;
+  }
+
+  .site-footer-inner > div {
+    /* Reset for larger screens */
+    width: auto;
+    text-align: left;
+  }
+}

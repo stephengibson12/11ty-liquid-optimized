@@ -1,0 +1,30 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>{{ title | default: site.name }}</title>
+
+{% if robots_tag %}
+  <meta name="robots" content="{{ robots_tag }}">
+{% endif %}
+
+<link rel="icon" type="image/svg+xml" href="/static/svg/favicon.svg?v=1">
+<link rel="icon" type="image/png" href="/static/media/images/favicon.png?v=1">
+
+<link rel="preload" href="/static/svg/sprites.svg" as="fetch" type="image/svg+xml" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Heebo:400,400i,500,700|Titillium+Web:600">
+<link rel="stylesheet" href="/static/css/main.css?v=1">
+
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"
+  integrity="sha512-Kr+RPfLjQ71E0cJ9nseJ6jwTrnmMnuSPnnsVQQ/ZYYCjOHKfJcWj8ILICXnvf9A7ZQChNzIbr9x/ZAxA6xAZlQ=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+  defer
+></script>
+<script type="module" src="/static/js/main.module.js" defer></script>
+
+<meta property="og:title" content="{{ title | default: site.title }}">
+<meta property="og:type" content="{{ ogType | default: site.ogType}}">
+<meta property="og:description" content="{{ description | default: site.description }}">
+<meta property="og:image" content="{{ ogImage | default: site.ogImage }}">

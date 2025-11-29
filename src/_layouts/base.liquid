@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    {% include 'partials/head.liquid' %}
+  </head>
+  <body class="is-boxed has-animations">
+    <div class="body-wrap boxed-container">
+      <header class="site-header">
+        {% include 'partials/header.liquid' %}
+      </header>
+
+      <main>
+        {{ content }}
+      </main>
+
+      <footer class="site-footer">
+        {% include 'svgs/footer-svgs.liquid' %}
+        {% include 'partials/footer.liquid' %}
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+{% comment %}
+  Component: Hero Section
+  Manages the display of the hero content and optional SVG illustrations.
+  Parameters:
+  - hero_title: (string, required) The main H1 title for the hero section.
+  - hero_cta_text: (string, optional) The text for the CTA button.
+  - hero_tagline: (string, optional) The text for tagline
+  - include_cta_button: (boolean, optional) Set to `false` to exclude the CTA button. Defaults to `true`.
+  - include_hero_tagline: (boolean, optional) Set to `false` to exclude the hero tagline. Defaults to `true`.
+  - include_illustration: (boolean, optional) Set to `false` to exclude the hero SVG illustration. Defaults to `true`.
+  - hero_layout_class: (string, optional) Additional CSS classes for the .hero-inner div.
+{% endcomment %}
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-inner">
+      {% include 'components/hero-content.liquid',
+        include_cta_button: include_cta_button,
+        hero_title: hero_title,
+        hero_tagline: hero_tagline,
+        hero_cta_text: hero_cta_text
+      %}
+
+      {% comment %} Conditionally include the hero illustration SVGs {% endcomment %}
+      {% if include_illustration != false %}
+        {% include 'svgs/hero-svgs.liquid' %}
+      {% endif %}
+    </div>
+  </div>
+</section>
